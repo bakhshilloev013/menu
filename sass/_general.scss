@@ -1,0 +1,131 @@
+* {
+    color: #fff;
+}
+.main {
+    min-height: 900px;
+    width: 100%;
+    background: rgb(26, 26, 26) url("../img/smoke.png") center center/cover no-repeat;
+    &_items {
+        min-height: 900px;
+        width: 100%;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &_title {
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0 0 15px red;
+    }
+    &_tabs {
+        height: 45px;
+        width: 600px;
+        // border: 1px solid red;
+        margin: 0 auto;
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        button {
+            display: block;
+            height: 100%;
+            width: 150px;
+            transform: skewX(-25deg);
+            border: 1px solid red;
+            box-shadow: 0 0 5px 3px #000;
+            background-color: rgba($color: #000000, $alpha: 0.6);
+            // color: red;
+            span {
+                display: block;
+                text-transform: uppercase;
+                color: #fff;
+                transform: skewX(25deg);
+                font-weight: 500;
+            }
+        }
+        .btn_hover {
+            transition: 0.2s all;
+            transform: scale(1.1) skewX(-25deg);
+            box-shadow:  5px 5px red;
+            border: 1px solid red;
+        }
+        .btn_active {
+            background-color: brown;
+            border: 1px solid #fff;
+            span {
+                color: #fff;
+            }
+        }
+    }
+    &_catalogs {
+        min-height: 900px;
+        width: 100%;
+        position: relative;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        .kalyans {
+            min-height: 450px;
+            width: 100%;
+        }
+    }
+    &_catalog {
+        min-height: 830px;
+        width: 100%;
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-between;
+        position: absolute;
+        left: -10000px;
+        transition: 0.3s all;
+        .card {
+            height: 400px;
+            width: 300px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            margin: 7px 7px;
+            background-color: rgba($color: #000000, $alpha: 0.6);
+            img {
+                height: 200px;
+                width: 200px;
+                border: none;
+                outline: none;
+            }
+            .card_title {
+                font-size: 25px;
+                margin-top: 15px;
+            }
+            .card_price {
+                font-size: 25px;
+                margin-top: 10px;
+                font-weight: 500;
+            }
+            button {
+                display: block;
+                height: 35px;
+                width: 130px;
+                padding: 0 5px;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: 500;
+                border: 1px solid red;
+                margin-top: 15px;
+                background-color: rgba($color: #000000, $alpha: 0.1);
+                &:hover {
+                    transition: 0.3s all;
+                    background-color: rgba($color: #000000, $alpha: 0.6);
+                }
+            }
+        }
+    }
+    &_catalog-active {
+        left: 0;
+        transition: 0.3s all;
+    }
+}
