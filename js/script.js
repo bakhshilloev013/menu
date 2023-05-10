@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Elements from html
     const tabs = document.querySelector(".main_tabs"),
           btns = document.querySelectorAll(".tab_btn"),
-          catalogs = document.querySelectorAll(".main_catalog");
+          catalogs = document.querySelectorAll(".main_catalog"),
+          cards = document.querySelectorAll(".card");
 
     tabs.addEventListener("click", (e) => {
         e.preventDefault();
@@ -54,7 +55,5 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     };
     
-
-
 
 });
