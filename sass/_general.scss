@@ -103,6 +103,7 @@
             .card_title {
                 font-size: 25px;
                 margin-top: 15px;
+                text-align: center;
             }
             .card_price {
                 font-size: 25px;
@@ -170,6 +171,9 @@
                     text-align: center;
                     color: red;
                     font-weight: 500;
+                }
+                .card_delivery-place {
+                    text-align: center;
                 }
                 
             }
